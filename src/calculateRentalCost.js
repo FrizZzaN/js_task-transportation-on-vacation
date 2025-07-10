@@ -14,7 +14,7 @@ const LONG_TERM_DISCOUNT_AMOUNT = 50;
  */
 function calculateRentalCost(numberOfDays) {
   if (numberOfDays < MINIMUM_RENTAL_DAYS) {
-    throw new Error('Number of rental days must be at least 1');
+    return 'Number of rental days must be at least 1';
   }
 
   const baseCost = numberOfDays * DAILY_RENTAL_RATE;
